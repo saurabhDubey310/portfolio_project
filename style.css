@@ -287,6 +287,14 @@ section {
   bottom: 2.5rem;
 }
 
+.icon-arrow {
+  position: absolute;
+  right: 78rem;
+  bottom: 2.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -314,6 +322,7 @@ section {
   position: relative;
 }
 
+ 
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
@@ -327,25 +336,46 @@ section {
   flex-direction: column;
 }
 
+
 .article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
+  display: grid; /* Use Grid Layout */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 2.5rem; /* Space between items */
+  max-width: 100%; /* Ensure the container takes full width */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add some padding */
 }
 
 article {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  align-items: center; /* Align items vertically */
+  gap: 0.5rem; /* Space between icon and text */
+  padding: 10px; /* Padding for spacing */
+  background-color: #fff; /* Background color for better visibility */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
 
 article .icon {
   cursor: default;
+  width: 40px; /* Set fixed width for icons */
+  height: 40px; /* Set fixed height for icons */
 }
+
+article div {
+  flex-grow: 1; /* Allow the text area to grow */
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.25rem; /* Adjust font size */
+}
+
+p {
+  margin: 0;
+  font-size: 1rem; /* Adjust font size */
+  color: #666; /* Text color */
+} */
 
 /* Projects */
 
@@ -374,7 +404,16 @@ article .icon {
   border-color: rgb(250, 250, 250);
 }
 
+.details-container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.details-container:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+}
 /* Contact Page */
+
 
 #contact{
   display: flex;
@@ -399,6 +438,14 @@ article .icon {
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
+}
+
+.contact-info-upper-container {
+  transition: box-shadow 0.3s ease;  
+}
+
+.contact-info-upper-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); 
 }
 
 .contact-info-container p{
