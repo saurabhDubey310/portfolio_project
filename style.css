@@ -1,4 +1,4 @@
-/* General style */
+/* GENERAL STYLE */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -19,14 +19,14 @@ p {
   color: rgb(85, 85, 85);
 }
 
-/* Transition */
+/* TRANSITION */
 
 a,
 .btn {
   transition: all 300ms ease;
 }
 
-/* Destop-Nav */
+/* DESKTOP-NAV */
 
 nav,
 .nav-links {
@@ -66,7 +66,166 @@ a:hover {
   cursor: default;
 }
 
-/* Hamburger Menu */
+/* Dark Mode Styles */
+
+#switch {
+  display: none; /* This hides the checkbox */
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode nav, .dark-mode footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .logo, .dark-mode .nav-links a, .dark-mode .mode {
+  color: #fff;
+}
+
+.dark-mode .btn {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-mode .icon {
+  filter: invert(1);
+}
+
+/* TOGGLER */
+.toggler-container{
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #232323;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.toggler{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ababab;
+  transition: transform 0.5s, background-color 0.5s, box-shadow 0.5s;
+  margin-left: 5px;
+}
+
+#switch:checked + .toggler-container .toggler{
+  transform: translateX(17px);
+  background-color: white;
+  box-shadow: 0 0 10px white, 0 0 20px white;
+}
+
+/* Add transition to body */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Transition for elements that change in dark mode */
+nav, 
+footer, 
+.details-container, 
+.contact-info-upper-container,
+.nav-links a, 
+.mode, 
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+.btn, 
+.article-container article, 
+.menu-links a, 
+.hamburger-icon span, 
+.project-title, 
+.project-btn {
+  transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Add transition to the icon-arrow */
+.icon-arrow {
+  transition: filter 0.3s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.mode{
+  font-family: "Poppins", sans-serif;
+}
+
+.dark-mode nav, 
+.dark-mode footer, 
+.dark-mode .details-container, 
+.dark-mode .contact-info-upper-container {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* white shadow */
+}
+
+.dark-mode .logo, 
+.dark-mode .nav-links a, 
+.dark-mode .mode,
+.dark-mode p, 
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4, 
+.dark-mode h5, 
+.dark-mode h6 {
+  color: #fff; /* All text color to white */
+}
+
+.dark-mode .btn, 
+.dark-mode .btn-color-1, 
+.dark-mode .btn-color-2, 
+.dark-mode .article-container article, 
+.dark-mode .details-container, 
+.dark-mode .contact-info-upper-container {
+  background-color: #444;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* white shadow */
+  border-radius: 40px;
+}
+
+.dark-mode .icon {
+  filter: invert(1); /* Inverts icons for dark mode */
+}
+
+.dark-mode .btn:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+.dark-mode .article-container article .icon {
+  color: #fff;
+}
+
+.dark-mode .menu-links a {
+  color: #fff;
+}
+
+.dark-mode .hamburger-icon span {
+  background-color: #fff; /* Change hamburger icon color */
+}
+
+.dark-mode .project-title, 
+.dark-mode .project-btn {
+  color: #fff;
+}
+
+
+/* HAMBURGER MENU */
 
 #hamburger-nav {
   display: none;
@@ -108,7 +267,7 @@ a:hover {
   display: block;
   padding: 10px;
   text-align: center;
-  font-size: 15rem;
+  font-size: 1.5rem;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
   color: black;
@@ -142,7 +301,21 @@ a:hover {
   transform: none;
 }
 
-/* Sections  */
+/* Dark Mode Styles for Hamburger Menu */
+.dark-mode .menu-links {
+  background-color: #333; /* Dark background */
+}
+
+.dark-mode .menu-links a {
+  color: #fff; /* White text */
+}
+
+.dark-mode .hamburger-icon span {
+  background-color: #fff; /* White lines for the hamburger icon */
+}
+
+
+/* SECTIONS  */
 
 section {
   padding-top: 4vh;
@@ -156,7 +329,7 @@ section {
   display: flex;
 }
 
-/* Profile Section */
+/* PROFILE SECTION */
 
 #profile {
   display: flex;
@@ -202,14 +375,14 @@ section {
   gap: 1rem;
 }
 
-/* Icons */
+/* ICONS */
 
 .icon {
   cursor: pointer;
   height: 2rem;
 }
 
-/* Buttons */
+/* BUTTONS */
 
 .btn-container {
   display: flex;
@@ -295,6 +468,12 @@ section {
   cursor: pointer;
 }
 
+/* Dark Mode Styles for Arrow Image */
+.dark-mode .icon-arrow {
+  filter: invert(1); /* Invert the arrow image to make it white in dark mode */
+}
+
+
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -322,7 +501,6 @@ section {
   position: relative;
 }
 
- 
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
@@ -336,73 +514,78 @@ section {
   flex-direction: column;
 }
 
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
 
 .article-container {
-  display: grid; /* Use Grid Layout */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
-  gap: 2.5rem; /* Space between items */
-  max-width: 100%; /* Ensure the container takes full width */
-  margin: 0 auto; /* Center the container */
-  padding: 0 20px; /* Add some padding */
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center; /* Center the articles horizontally */
+  padding: 1rem; /* Optional: Add padding to ensure spacing */
 }
 
 article {
   display: flex;
-  align-items: center; /* Align items vertically */
-  gap: 0.5rem; /* Space between icon and text */
-  padding: 10px; /* Padding for spacing */
-  background-color: #fff; /* Background color for better visibility */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+  border-radius: 40px;
+}
+
+article {
+  display: flex;
+  flex-direction: row; /* Set a vertical flow for content inside the article */
+  align-items: center; /* Center the content inside the article */
+  width: 10rem; /* Increase width to give more space to each article */
+  padding: 1rem; /* Add padding for spacing */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Add a shadow for better visibility */
 }
 
 article .icon {
   cursor: default;
-  width: 40px; /* Set fixed width for icons */
-  height: 40px; /* Set fixed height for icons */
 }
 
-article div {
-  flex-grow: 1; /* Allow the text area to grow */
-}
+article .icon {
+  cursor: default;
+  font-size: 2rem; /* Optional: Adjust icon size */
+} 
 
-h3 {
-  margin: 0;
-  font-size: 1.25rem; /* Adjust font size */
-}
+/* PROJECTS */
 
-p {
-  margin: 0;
-  font-size: 1rem; /* Adjust font size */
-  color: #666; /* Text color */
-} */
-
-/* Projects */
-
-#projects{
+#projects {
   position: relative;
+  
 }
 
-.color-container{
+.color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
 }
 
-.project-img{
+.project-img {
   border-radius: 2rem;
-  height: 90%;
   width: 90%;
+  height: 90%;
 }
 
-.project-title{
+.project-title {
   margin: 1rem;
   color: black;
 }
 
-.project-btn{
+.project-btn {
   color: black;
-  border-color: rgb(250, 250, 250);
+  border-color: rgb(163, 163, 163);
 }
+
 
 .details-container {
   transition: transform 0.3s ease, box-shadow 0.3s ease; 
@@ -412,7 +595,8 @@ p {
   transform: translateY(-10px); 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
 }
-/* Contact Page */
+
+/* CONTACT PAGE */
 
 
 #contact{
@@ -460,7 +644,7 @@ p {
   height: 2.5rem;
 }
 
-/* Footer */
+/* FOOTER */
 
 #footer{
   height: 26vh;
