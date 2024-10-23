@@ -227,7 +227,7 @@ body.dark-mode {
 
 /* HAMBURGER MENU */
 
-#hamburger-nav {
+ #hamburger-nav {
   display: none;
 }
 
@@ -261,6 +261,7 @@ body.dark-mode {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  border-radius: 1rem;
 }
 
 .menu-links a {
@@ -290,7 +291,7 @@ body.dark-mode {
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
 }
-
+ 
 .hamburger-icon span:first-child {
   transform: none;
 }
@@ -302,18 +303,17 @@ body.dark-mode {
 }
 
 /* Dark Mode Styles for Hamburger Menu */
-.dark-mode .menu-links {
+ .dark-mode .menu-links {
   background-color: #333; /* Dark background */
-}
+ }
 
 .dark-mode .menu-links a {
   color: #fff; /* White text */
-}
+ }
 
 .dark-mode .hamburger-icon span {
   background-color: #fff; /* White lines for the hamburger icon */
-}
-
+ }  
 
 /* SECTIONS  */
 
@@ -546,7 +546,7 @@ article {
   align-items: center; /* Center the content inside the article */
   width: 10rem; /* Increase width to give more space to each article */
   padding: 1rem; /* Add padding for spacing */
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Add a shadow for better visibility */
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Optional: Add a shadow for better visibility */
 }
 
 article .icon {

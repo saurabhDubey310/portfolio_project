@@ -6,8 +6,9 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
+    <link rel="icon" href="/assests/favicon.ico" type="image/x-icon">  </head>
   <body>
+    <!-- =================================  NAVBAR  ================================= -->
     <nav id="desktop-nav">
       <div class="logo">Saurabh Dubey</div>
       <div>
@@ -16,15 +17,16 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <input type="checkbox" name="switch" id="switch">
-          <label for="switch" class="toggler-container">
+          <!-- <input type="checkbox" name="switch" id="switch"> -->
+          <!-- <label for="switch" class="toggler-container">
             <div class="toggler"></div>
-          </label>
-          <span class="mode">Light</span>
+          </label> -->
+          <!-- <span class="mode">Light</span> -->
         </ul>   
       </div>
     </nav>
 
+    <!-- ================================  HAMBURGER NAVBAR  ======================== -->
     <nav id="hamburger-nav">
       <div class="logo">Saurabh Dubey</div>
       <div class="hamburger-menu">
@@ -42,6 +44,7 @@
       </div>
     </nav>
 
+    <!-- ================================  PROFILE SECTION  ========================= -->
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assests/saurabh-photo.png" alt="saurabh dubey" />
@@ -80,6 +83,7 @@
       </div>
     </section>
 
+    <!-- ================================  ABOUT SECTION  =========================== -->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -112,6 +116,7 @@
       <img src="./assests/upward-arrow.png" alt=" Upward-Arrow icon" class="icon-arrow" onclick="location.href='./#profile'"/>
     </section>
 
+    <!-- ================================  EXPERIENCE SECTION  ====================== -->
     <section id="experience"> 
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
@@ -248,6 +253,7 @@
       <img src="./assests/upward-arrow.png" alt=" Upward-Arrow icon" class="icon-arrow" onclick="location.href='./#about'"/>
     </section>
 
+    <!-- ================================  PROJECTS SECTION  ======================== -->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -285,7 +291,7 @@
             <div class="article-container">
               <img src="./assests/portfolio.svg" alt="Project-3" class="project-img">
             </div>
-            <h2 class="experience-sub-title project-title">Portfolio</h2>
+            <h2 class="experience-sub-title project-title">Portfolio website</h2>
             <div class="btn-container">
               <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/saurabhDubey310/portfolio_project','_blank')">
                 Github
@@ -306,6 +312,7 @@
       <img src="./assests/upward-arrow.png" alt=" Upward-Arrow icon" class="icon-arrow" onclick="location.href='./#experience'"/>
     </section>
 
+    <!-- ================================  CONTACT SECTION  ========================= -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -321,6 +328,7 @@
       </div>
     </section>
 
+    <!-- ================================  FOOTER  ================================== -->
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -334,6 +342,8 @@
       </nav>
       <p>Copyright &#169; 2024 Saurabh Dubey. All Rights Reserved.</p>
     </footer>
+
+    <!-- ================================  SCRIPT  ================================== -->
     <script src="script.js"></script>
   </body>
 </html>
