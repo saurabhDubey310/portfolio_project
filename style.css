@@ -66,65 +66,6 @@ a:hover {
   cursor: default;
 }
 
-/* Dark Mode Styles */
-
-#switch {
-  display: none; /* This hides the checkbox */
-}
-
-body.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
-}
-
-.dark-mode nav, .dark-mode footer {
-  background-color: #333;
-  color: #fff;
-}
-
-.dark-mode .logo, .dark-mode .nav-links a, .dark-mode .mode {
-  color: #fff;
-}
-
-.dark-mode .btn {
-  background-color: #444;
-  color: #fff;
-}
-
-.dark-mode .icon {
-  filter: invert(1);
-}
-
-/* TOGGLER */
-.toggler-container{
-  width: 40px;
-  height: 20px;
-  border-radius: 20px;
-  background-color: #232323;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-}
-
-.toggler{
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #ababab;
-  transition: transform 0.5s, background-color 0.5s, box-shadow 0.5s;
-  margin-left: 5px;
-}
-
-#switch:checked + .toggler-container .toggler{
-  transform: translateX(17px);
-  background-color: white;
-  box-shadow: 0 0 10px white, 0 0 20px white;
-}
-
-/* Add transition to body */
-body {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
 
 /* Transition for elements that change in dark mode */
 nav, 
@@ -154,80 +95,10 @@ h6,
   transition: filter 0.3s ease;
 }
 
-/* Dark Mode Styles */
-body.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
-}
-
-.mode{
-  font-family: "Poppins", sans-serif;
-}
-
-.dark-mode nav, 
-.dark-mode footer, 
-.dark-mode .details-container, 
-.dark-mode .contact-info-upper-container {
-  background-color: #333;
-  color: #fff;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* white shadow */
-}
-
-.dark-mode .logo, 
-.dark-mode .nav-links a, 
-.dark-mode .mode,
-.dark-mode p, 
-.dark-mode h1, 
-.dark-mode h2, 
-.dark-mode h3, 
-.dark-mode h4, 
-.dark-mode h5, 
-.dark-mode h6 {
-  color: #fff; /* All text color to white */
-}
-
-.dark-mode .btn, 
-.dark-mode .btn-color-1, 
-.dark-mode .btn-color-2, 
-.dark-mode .article-container article, 
-.dark-mode .details-container, 
-.dark-mode .contact-info-upper-container {
-  background-color: #444;
-  color: #fff;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* white shadow */
-  border-radius: 40px;
-}
-
-.dark-mode .icon {
-  filter: invert(1); /* Inverts icons for dark mode */
-}
-
-.dark-mode .btn:hover {
-  background-color: #666;
-  color: #fff;
-}
-
-.dark-mode .article-container article .icon {
-  color: #fff;
-}
-
-.dark-mode .menu-links a {
-  color: #fff;
-}
-
-.dark-mode .hamburger-icon span {
-  background-color: #fff; /* Change hamburger icon color */
-}
-
-.dark-mode .project-title, 
-.dark-mode .project-btn {
-  color: #fff;
-}
-
 
 /* HAMBURGER MENU */
 
-#hamburger-nav {
+ #hamburger-nav {
   display: none;
 }
 
@@ -261,6 +132,7 @@ body.dark-mode {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  border-radius: 1rem;
 }
 
 .menu-links a {
@@ -290,7 +162,7 @@ body.dark-mode {
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
 }
-
+ 
 .hamburger-icon span:first-child {
   transform: none;
 }
@@ -301,18 +173,6 @@ body.dark-mode {
   transform: none;
 }
 
-/* Dark Mode Styles for Hamburger Menu */
-.dark-mode .menu-links {
-  background-color: #333; /* Dark background */
-}
-
-.dark-mode .menu-links a {
-  color: #fff; /* White text */
-}
-
-.dark-mode .hamburger-icon span {
-  background-color: #fff; /* White lines for the hamburger icon */
-}
 
 
 /* SECTIONS  */
@@ -546,7 +406,7 @@ article {
   align-items: center; /* Center the content inside the article */
   width: 10rem; /* Increase width to give more space to each article */
   padding: 1rem; /* Add padding for spacing */
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Add a shadow for better visibility */
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Optional: Add a shadow for better visibility */
 }
 
 article .icon {
