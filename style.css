@@ -173,6 +173,18 @@ h6,
   transform: none;
 }
 
+/* Dark Mode Styles for Hamburger Menu */
+.dark-mode .menu-links {
+  background-color: #333; /* Dark background */
+}
+
+.dark-mode .menu-links a {
+  color: #fff; /* White text */
+}
+
+.dark-mode .hamburger-icon span {
+  background-color: #fff; /* White lines for the hamburger icon */
+}
 
 
 /* SECTIONS  */
